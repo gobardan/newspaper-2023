@@ -39,9 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 3rd party library
     "django_summernote",
+    "rest_framework",
     # custom apps
     "newspaper",
     "dlog_app",
+    "api",
 ]
 
 MIDDLEWARE = [
