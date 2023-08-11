@@ -27,9 +27,9 @@
                   <a class="nav-item nav-link"
                      id="nav-{{ category.name }}-tab"
                      data-toggle="tab"
-                     href="#nav-{{category.name}}"
+                     href="#nav-{{category.name|slugify}}"
                      role="tab"
-                     aria-controls="nav-{{category.name}}"
+                     aria-controls="nav-{{category.name|slugify}}"
                      aria-selected="false">{{category.name}}</a>
                   {% endfor %}
                 </div>
