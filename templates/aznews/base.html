@@ -126,9 +126,9 @@
 
                 },
                 error: function(response) {
-                    $("#newsletter_bottom_message").append(`
+                    $("#newsletter_side_message").append(`
                       <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                        ${response.message}
+                        ${response.responseJSON.message}
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -140,7 +140,7 @@
                 }
                 
             })
-          
+            
         })
 
         $("#newsletter_bottom_form").submit(function(e) {
